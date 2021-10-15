@@ -7,48 +7,6 @@ let stocks = {
 
 let is_shop_open = true;
 
-
-// EXAMPLE 1
-async function order() {
-    try {
-        await abc;
-    }
-    catch (error) {
-        console.log("abc does not exsist", error);
-    }
-    finally {
-        console.log("run code anyways");
-    }
-}
-
-let toppings_choice = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(
-                console.log("which toppings would you love?"))
-        }, 3000)
-    })
-}
-
-async function kitchen() {
-    console.log("a");
-    console.log("b");
-    console.log("c");
-
-    await toppings_choice()
-    console.log("d");
-    console.log("e");
-}
-
-kitchen()
-
-console.log("cleaning the dishes");
-console.log("cleaning the tables");
-console.log("taking other order");
-// EXAMPLE 1
-
-
-
 // EXAMPLE 2
 function time(ms) {
     return new Promise((resolve, reject) => {
@@ -96,3 +54,44 @@ async function kitch() {
 }
 
 kitch()
+
+
+
+// EXAMPLE 1
+async function order() {
+    try {
+        await abc;
+    }
+    catch (error) {
+        console.log("abc does not exsist", error);
+    }
+    finally {
+        console.log("run code anyways");
+    }
+}
+
+let toppings_choice = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(
+                console.log("which toppings would you love?"))
+        }, 3000)
+    })
+}
+
+async function kitchen() {
+    console.log("a");
+    console.log("b");
+    console.log("c");
+
+    await toppings_choice()
+    console.log("d");
+    console.log("e");
+}
+
+kitchen()
+
+console.log("cleaning the dishes");
+console.log("cleaning the tables");
+console.log("taking other order");
+// EXAMPLE 1
